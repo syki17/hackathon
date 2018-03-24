@@ -38,7 +38,7 @@ public class CoinExchangeAnalyzer {
     /**
      * @param args the command line arguments
      */
-    testreturn t = new testreturn();
+  
     long  startlongtime12 = 1521804898;
     public static void main(String[] args) throws UnirestException, InterruptedException, IOException, ClassNotFoundException, SQLException, NoSuchAlgorithmException, InvalidKeyException {
         CoinExchangeAnalyzer getCoin = new CoinExchangeAnalyzer();
