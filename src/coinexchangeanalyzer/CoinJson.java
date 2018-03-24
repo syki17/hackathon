@@ -1,0 +1,216 @@
+package coinexchangeanalyzer;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class CoinJson {
+
+    @SerializedName("MarketID")
+    @Expose
+    private String marketID;
+    @SerializedName("LastPrice")
+    @Expose
+    private String lastPrice;
+    @SerializedName("Change")
+    @Expose
+    private String change;
+    @SerializedName("HighPrice")
+    @Expose
+    private String highPrice;
+    @SerializedName("LowPrice")
+    @Expose
+    private String lowPrice;
+    @SerializedName("Volume")
+    @Expose
+    private String volume;
+    @SerializedName("BTCVolume")
+    @Expose
+    private String bTCVolume;
+    @SerializedName("TradeCount")
+    @Expose
+    private String tradeCount;
+    @SerializedName("BidPrice")
+    @Expose
+    private String bidPrice;
+    @SerializedName("AskPrice")
+    @Expose
+    private String askPrice;
+    @SerializedName("BuyOrderCount")
+    @Expose
+    private String buyOrderCount;
+    @SerializedName("SellOrderCount")
+    @Expose
+    private String sellOrderCount;
+    @SerializedName("CoinName")
+    @Expose
+    private String coinName;
+    @SerializedName("PairCoinName")
+    @Expose
+    private String pairCoinName;
+    @SerializedName("TimeStamp")
+    @Expose
+    private String timeStamp;
+
+    /**
+     * No args constructor for use in serialization
+     *
+     */
+    public CoinJson() {
+    }
+
+    /**
+     *
+     * @param bidPrice
+     * @param marketID
+     * @param tradeCount
+     * @param change
+     * @param volume
+     * @param buyOrderCount
+     * @param lastPrice
+     * @param bTCVolume
+     * @param sellOrderCount
+     * @param lowPrice
+     * @param highPrice
+     * @param askPrice
+     * @param coinName
+     */
+    public CoinJson(String marketID, String lastPrice, String change, String highPrice, String lowPrice, String volume, String bTCVolume, String tradeCount, String bidPrice, String askPrice, String buyOrderCount, String sellOrderCount, String coinName, String pairNameCoin, String timeStamp) {
+super();
+        this.marketID = marketID;
+        this.lastPrice = lastPrice;
+        this.change = change;
+        this.highPrice = highPrice;
+        this.lowPrice = lowPrice;
+        this.volume = volume;
+        this.bTCVolume = bTCVolume;
+        this.tradeCount = tradeCount;
+        this.bidPrice = bidPrice;
+        this.askPrice = askPrice;
+        this.buyOrderCount = buyOrderCount;
+        this.sellOrderCount = sellOrderCount;
+        this.coinName = coinName;
+        this.pairCoinName = pairCoinName;
+        this.timeStamp = timeStamp;
+    }
+
+    public String getMarketID() {
+        return marketID;
+    }
+
+    public void setMarketID(String marketID) {
+        this.marketID = marketID;
+    }
+
+    public String getLastPrice() {
+        return lastPrice;
+    }
+
+    public void setLastPrice(String lastPrice) {
+        this.lastPrice = lastPrice;
+    }
+
+    public String getChange() {
+        return change;
+    }
+
+    public void setChange(String change) {
+        this.change = change;
+    }
+
+    public String getHighPrice() {
+        return highPrice;
+    }
+
+    public void setHighPrice(String highPrice) {
+        this.highPrice = highPrice;
+    }
+
+    public String getLowPrice() {
+        return lowPrice;
+    }
+
+    public void setLowPrice(String lowPrice) {
+        this.lowPrice = lowPrice;
+    }
+
+    public String getVolume() {
+        return volume;
+    }
+
+    public void setVolume(String volume) {
+        this.volume = volume;
+    }
+
+    public String getBTCVolume() {
+        return bTCVolume;
+    }
+
+    public void setBTCVolume(String bTCVolume) {
+        this.bTCVolume = bTCVolume;
+    }
+
+    public String getTradeCount() {
+        return tradeCount;
+    }
+
+    public void setTradeCount(String tradeCount) {
+        this.tradeCount = tradeCount;
+    }
+
+    public String getBidPrice() {
+        return bidPrice;
+    }
+
+    public void setBidPrice(String bidPrice) {
+        this.bidPrice = bidPrice;
+    }
+
+    public String getAskPrice() {
+        return askPrice;
+    }
+
+    public void setAskPrice(String askPrice) {
+        this.askPrice = askPrice;
+    }
+
+    public String getBuyOrderCount() {
+        return buyOrderCount;
+    }
+
+    public void setBuyOrderCount(String buyOrderCount) {
+        this.buyOrderCount = buyOrderCount;
+    }
+
+    public String getSellOrderCount() {
+        return sellOrderCount;
+    }
+
+    public void setSellOrderCount(String sellOrderCount) {
+        this.sellOrderCount = sellOrderCount;
+    }
+
+    public String getCoinName() {
+        return coinName;
+    }
+
+    public void setCoinName(String coinName) {
+        this.coinName = coinName;
+    }
+
+    public String getPairCoinName() {
+        return pairCoinName;
+    }
+
+    public void setPairCoinName(String pairCoinName) {
+        this.pairCoinName = pairCoinName;
+    }
+
+    public String getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(String timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+
+}
