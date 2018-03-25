@@ -1,0 +1,1 @@
+testconnection.Trading_SMA
