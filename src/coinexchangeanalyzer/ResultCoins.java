@@ -2,7 +2,9 @@ package coinexchangeanalyzer;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
+/*
+this creates an object from the getCoins() Method
+*/
 public class ResultCoins {
 
 @SerializedName("MarketID")

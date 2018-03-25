@@ -2,7 +2,9 @@ package coinexchangeanalyzer;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
+/*
+this creates a object from the getSummary() Method. Most of these values are in a 24h timeframe
+*/
 public class Summary {
 
 @SerializedName("MarketID")
@@ -95,7 +97,10 @@ return lastPrice;
 public void setLastPrice(String lastPrice) {
 this.lastPrice = lastPrice;
 }
-
+/**
+ * Returns 24h change in price as %
+ * @return 
+ */
 public String getChange() {
 return change;
 }
@@ -103,7 +108,10 @@ return change;
 public void setChange(String change) {
 this.change = change;
 }
-
+/**
+ * Return 24h high price
+ * @return 
+ */
 public String getHighPrice() {
 return highPrice;
 }
@@ -111,7 +119,10 @@ return highPrice;
 public void setHighPrice(String highPrice) {
 this.highPrice = highPrice;
 }
-
+/**
+ * Returns 24h low price 
+ * @return 
+ */
 public String getLowPrice() {
 return lowPrice;
 }

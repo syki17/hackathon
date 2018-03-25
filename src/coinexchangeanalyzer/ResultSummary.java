@@ -18,14 +18,12 @@ private String message;
 @SerializedName("result")
 @Expose
 private List<Summary> summary = null;
-
 /**
 * No args constructor for use in serialization
 * 
 */
 public ResultSummary() {
 }
-
 /**
 * 
 * @param message
